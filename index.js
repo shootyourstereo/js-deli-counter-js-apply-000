@@ -1,9 +1,14 @@
 var katzDeliLine = [];
-function takeANumber(katzDeliLine, name){
-  katzDeliLine.push(name);
-  return "Welcome, " + name + ". You are number " + katzDeliLine.length +" in line.";
+  let number = 1;
+function takeANumber(katzDeliLine){
+  katzDeliLine.push(number);
+  return number++;
+  // for (i=0; i>katzDeliLine.length; i++){
+  //   number = i + 1;
+  //   return "Welcome.You are number " + number + " in line.";
+  // }
 }
-takeANumber(katzDeliLine,"Ada");
+takeANumber(katzDeliLine);
 
 
 
